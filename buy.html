@@ -1,0 +1,119 @@
+<html lang="en"><head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+          *
+       .industry{
+        height: 600px;
+         width: 290px;
+         margin:0 auto;
+         margin-top: 20px;
+         background:rgb(245, 243, 243);
+         border-radius: 9px;
+        }
+        .nation{
+          height: 395px;
+          width: 255px;
+          margin: 0 auto;
+          padding: 10px;
+          border-radius: 9px;
+          background:white;
+        }
+        .nation button {
+          text-align: center;
+         display: block;
+         margin: 0 auto;
+         position: relative;
+         background-color: orange;
+         border: none;
+         border-radius: 5px;
+         padding: 5px;
+      }
+        .nation button a{
+        text-decoration: none;
+      }
+    form button{
+         width: 85%;
+         height: 30px;
+         display: block;
+         margin: 0 auto;
+         border-radius: 4px;
+         border: 1px solid gray;
+         margin-top: -10px;
+      }
+      h1{
+        text-align: center;
+        font-size: 27px;
+      }
+      p{
+        font-size: 18px;
+      }
+      .nation p a{
+        color: black;
+      }
+      #loading-container {
+              text-align: center;
+          }
+  
+       #loading-button {
+              width: 150px;
+              height: 30px;
+              background-color: orange;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+       }
+  
+      #loading-message {
+              display: none;
+       }
+  
+        
+      </style>
+  </head>
+  <body>
+    <div class="industry"> <br><br><br> <br>
+    <div class="nation">
+      <h1>Payment For Logins</h1>
+      <p>kindly make your payment to the account below note that the money you are paying is 5500,<br><br>
+          Account Number: 2026537289<br>
+          Account Name: Moses Dio<br>
+          Bank: Kuda MFB<br><br>
+          </p><div id="loading-container">
+            <button id="loading-button" onclick="startPaymentConfirmation()">Confirm Payment</button>
+            <p id="loading-message" style="display: block;">pay now</p>
+        </div>
+      </div>
+    
+  </div>
+  
+  
+  <script>
+    function startPaymentConfirmation() {
+        const button = document.getElementById('loading-button');
+        const message = document.getElementById('loading-message');
+  
+        // Show the "Confirming Payment" message at the bottom of the button
+        message.style.display = 'block';
+        message.textContent = 'Confirming Payment';
+  
+        // Simulate a delay of 2 seconds for each status message
+        setTimeout(() => {
+            message.textContent = 'Payment not received';
+            setTimeout(() => {
+                message.textContent = 'pay now';
+                setTimeout(() => {
+                    // Display "Payment not detected" message after 7 seconds in total
+                    message.textContent = 'Payment not detected';
+                    message.style.color = 'red';
+                }, 5000);
+            }, 2000);
+        }, 2000);
+    }
+  </script>
+    
+  
+  </body></html>

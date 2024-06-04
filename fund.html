@@ -1,0 +1,129 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width==, initial-scale=1.0">
+    <title>home</title>
+    <style>
+      *
+      .country{
+       height: 610px;
+       width: 290px;
+       margin:0 auto;
+       margin-top: 20px;
+       background: white;
+       border-radius: 9px;
+      }
+      .community{
+        height: 550px;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 5px;
+        border-radius: 9px;
+        background:white;
+      }
+      .content h1{
+        font-size: 20px;
+        text-align: center;
+        color: orange;
+  }
+      .content{
+        font-size: 15px;
+        text-align: center;
+  }
+     .content form select{
+        font-size: 15px;
+        height: 35px;
+        width: 90%;
+        border-radius: 4px;
+  }
+  .content form input{
+        width: 90%;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+        border: 1px solid gray;
+  }
+  .content form button{
+        background-color: orange;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="country">
+      <br>
+     <div class="community">
+     <div class="content">
+      <br>
+          <h1>INSTANT CASHOUT</h1>
+          <br><br><br>
+        <form action="sucess.html" method="get">
+            <select>
+                <option>......Select Bank..... </option>
+                <option>Access Bank </option>
+                <option>UBA</option>
+                <option>Zenith Bank</option>
+                <option>Keystone Bank</option>
+                <option>GTBank</option>
+                <option>First Bank</option>
+                <option>Jaiz Bank</option>
+                <option>Opay</option>
+                <option>PalmPay</option>
+                <option>Kuda</option>
+                <option>Polaris Bank</option>
+                <option>TAJ Bank</option>
+                <option>Paga</option>
+                <option>Raven</option>
+                <option>Stanbic IBTC</option>
+                <option>Fidelity Bank</option>
+                <option>Union Bank Of Nigeria</option>
+                <option>FCMB</option>
+                <option>Optimus Bank</option>
+                <option>Heritage Bank</option>
+                <option>Sterling Bank Plc</option>
+                <option>Wema Bank</option>
+                <option>Sparkle Bank</option>
+                <option>VFD Microfinance Bank</option>
+                <option>Fairmoney Microfinance Bank</option>
+                <option>LOTUS BANK</option>
+                <option>Unity Bank PLC</option>
+
+            </select><br><br><br>
+            <!-- <input type="text" placeholder="Tag(optional)"><br> -->
+            <!-- <input type="number" placeholder="Choose ban" required><br> -->
+            <input type="text" id="name" value="₦100,000.00" disabled=""><br>
+            <input type="text" id="txt" placeholder="Your Account Name" required=""><br>
+            <input type="number" id="txt" placeholder="Your Account Number" required="">
+            <br>
+            <br>
+            <button onclick="passvalue();">WITHDRAW NOW</button>
+         </form>
+     
+           
+        </div>
+
+    </div>
+    <script>
+      function passvalue(){
+          var firstname=document.getElementById("txt").value;      
+          localStorage.setItem("textvalue", firstname);
+           
+          var lastname=document.getElementById("name").value;
+          localStorage.setItem("textname", lastname);
+
+          var middlename=document.getElementById("number").value;
+          localStorage.setItem("textmiddle", middlname);
+          
+          
+      }
+    
+    </script>
+
+    
+
+</div></body></html>

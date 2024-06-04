@@ -1,0 +1,114 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .circle{
+            width: 99%;
+            height: fit-content;
+            margin: 0 auto;
+        
+        }
+        .box {
+            width: 96%;
+            height: 600px;
+            background: white;
+            margin: 0 auto;
+            margin-top: 20%;
+            border-radius: 16px;
+           
+            display: block;
+        }
+        .small  {
+            width: 89%;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .big  {
+            width: 97%;
+            height: 65%;
+            margin: 0 auto;
+            /* border: 1px solid grey; */
+        }
+        .small  p {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: black;
+        }
+        .big img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+            /* margin-top: 10%; */
+        }
+        .big h3 {
+            text-align: center;
+            font-family: sans-serif;
+            color: black;
+            margin-top: 10%;
+        }
+        .big p {
+            text-align: center;
+            font-size: 20px;
+        }
+        .small img {
+            width: 110px;
+            margin: 0 auto;
+            display: block;
+        }
+        button {
+            width: 300px;
+            height: 35px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 9px;
+            border: none;
+            background: orange;
+ 
+        
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+            
+    </style>
+    <div class="circle">
+        <div class="box"> <br>
+            <div class="small"> <br>
+                <!-- <h2>Total Amount </h2> -->
+                <img src="succesful.jpeg" alt="img/succesful logo.jpeg">
+                <!-- <p style="color: black">₦<span  id="name"></span></p> -->
+
+            </div>  
+            <div class="big">
+                <h3>Your transaction is Successful</h3>
+                <p>You just sent <span style="color: orange;" id="name">₦100,000.00</span> to <span style="text-transform: uppercase; color:orange" id="result"></span> Bank Account</p>
+                 <br>
+                <button><a href="home.html">Done</a></button>
+
+                <!-- <p>Wallet Trans ID:45243623456</p> -->
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+        document.getElementById("name").innerHTML=localStorage.getItem("textname");
+        document.getElementById("bank").innerHTML=localStorage.getItem("textmiddle");
+       
+        
+    </script>
+
+</body></html>

@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box {
+        width: 100%;
+        height: 380px;
+        margin: 0 auto;
+        /* background: lime; */
+        margin-top: 120px;
+    }
+    .box h1 {
+        font-family: arial;
+        text-align: center;
+        color: black;
+    }
+    .form input {
+        width: 97%;
+        height: 47px;
+        margin: 0 auto;
+        border: 1px solid  orange;
+        border-radius: 3px;
+    }
+    ::placeholder {
+        color:  black  ;
+        font-size: 19px;
+        padding-left: 10px;
+        font-family: monospace;
+    }
+    .form p {
+        font-size: 19px;
+        float: right;
+       
+    }
+    .form p a {
+        text-decoration: none;
+        color: #000;
+         /* margin-left: 18px; */
+    }
+    .logo img {
+        width: 110px;
+    }
+    .gogo img {
+        width: 65px;
+        left: 0;
+        margin-top: -20px;
+    }
+</style></head>
+
+
+<body>
+    
+    <div class="box">
+    <h1>INSTANT CASHOUT</h1>
+   <div class="logo">
+    <img src="icon.png" alt="img/PAGE ICON.png">
+   </div>
+   
+   
+    <div class="form">
+        <form action="home.html" method="get">
+            <input name="pass" class="Molly234dio" type="password" placeholder="Code"> <br> <br>
+            <p><a href="buy.html">Purchase passcode</a></p>
+            <p style="float: left"><a href="https://chat.whatsapp.com/CKHkFKQK9Xz2x5Ko21UhJS">Join Community</a></p>
+            <br> <br> 
+            <input type="button" value="Open" onclick="pasuser(this.form)" style="background: orange;  font-size: 19px; width: 100%; color: white;">
+        </form>
+    </div>
+</div>
+<div class="gogo">
+ <a href="https://chat.whatsapp.com/CKHkFKQK9Xz2x5Ko21UhJS"> <img src="what.jpg" alt="img/WHATS ICON.jpg"></a>
+</div>
+
+<script>
+ function pasuser(form)  { 
+     if (form.pass.value=="Molly234dio") { location="home.html" } 
+     else { alert("Wrong Password, Buy NOW") } 
+     }
+</script>
+   
+   
+
+
+    </body></html>
